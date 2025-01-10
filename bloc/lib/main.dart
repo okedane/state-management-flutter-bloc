@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
   const HomePage({super.key});
   Stream<int> countStream() async* {
     for (int i = 1; i <= 10; i++) {
-      await Future.delayed(const Duration(seconds: 1));
+      await Future.delayed(const Duration(seconds: 3));
       yield i;
     }
   }
